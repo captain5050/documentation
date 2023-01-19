@@ -127,6 +127,7 @@ sudo cp arch/arm64/boot/Image.gz /boot/$KERNEL.img
 ----
 
 NOTE: On a Raspberry Pi 2/3/4, the `-j4` flag splits the work between all four cores, speeding up compilation significantly.
+NOTE: On Ubuntu `/boot/` should be replaced with `/boot/firmware/` and the `kernel=` line of `config.txt` updated for your kernel's name.
 
 If you now reboot, your Raspberry Pi should be running your freshly-compiled kernel!
 
